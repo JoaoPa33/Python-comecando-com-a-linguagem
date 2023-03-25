@@ -1,4 +1,4 @@
-print("*"*40)
+print("*"*)
 print("bem vindo")
 print("*"*40)
 
