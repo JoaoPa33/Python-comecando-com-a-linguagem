@@ -4,10 +4,11 @@ print("*"*40)
 
 numero_secreto = 42
 total_de_tentativas = 3
-rodada = 1
+#rodada = 1
 
-while(rodada <= total_de_tentativas):
-    print("Tentativa {} de {} ".format(rodada, total_de_tentativas))
+for rodada in range(1, total_de_tentativas):
+# while(rodada <= total_de_tentativas):
+    print("Tentativa {} de {} ".format(rodada, total_de_tentativas + 1))
     chute = int(input("Digite um numero:"))
     # todo input retorna uma string
     print("Você digitou:", chute)
@@ -24,6 +25,6 @@ while(rodada <= total_de_tentativas):
         elif (chute < numero_secreto):
             print("Você errou: O número é maior do que o digitado")
 
-    rodada = rodada + 1
+    # a funçao for ja incremente, nao precisa do "rodada = rodada + 1"
     print("_"*20)
 print("fim de jogo")
